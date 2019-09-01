@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
-    Archives: 2019 |
+    tips |
     
     Hexo</title>
   
@@ -23,103 +23,92 @@
 <body>
 <main class="content">
   <section class="outer">
-  <article class="articles">
+  
+
+<article id="post-tips" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
     
-    <h1 class="page-type-title">2019</h1>
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      tips
+    </h1>
+  
+  
+
+
+
+
+      </header>
+    
 
     
-    
-    
-      
-      
-        
-        
-    <div class="archives-wrap">
-      <div class="archive-year-wrap">
-        <a href="/archives/2019" class="archive-year">2019</a>
-      </div>
-      <div class="archives">
-        
-        <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/09/01/tips/" class="archive-article-date">
-  <time datetime="2019-09-01T10:48:59.000Z" itemprop="datePublished">09/01</time>
+      <div class="article-meta">
+        <a href="/2019/09/01/tips/" class="article-date">
+  <time datetime="2019-09-01T10:48:59.000Z" itemprop="datePublished">2019-09-01</time>
 </a>
-      
-  
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/01/tips/">tips</a>
-    </h2>
-  
-  
-
-
-
-
-    </header>
-    
-    
-  </div>
-</article>
-        
-      
-      
-        <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/09/01/test-my-site/" class="archive-article-date">
-  <time datetime="2019-09-01T08:01:53.000Z" itemprop="datePublished">09/01</time>
-</a>
-      
-  
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/01/test-my-site/">test_my_site</a>
-    </h2>
-  
-  
-
-
-
-
-    </header>
-    
-    
-  </div>
-</article>
-        
-      
-      
-        <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/09/01/hello-world/" class="archive-article-date">
-  <time datetime="2019-09-01T07:58:25.473Z" itemprop="datePublished">09/01</time>
-</a>
-      
-  
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/01/hello-world/">Hello World</a>
-    </h2>
-  
-  
-
-
-
-
-    </header>
-    
-    
-  </div>
-</article>
-        
         
       </div>
+    
+
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <h1 id="Could-not-import-cv2-in-python3-5"><a href="#Could-not-import-cv2-in-python3-5" class="headerlink" title="Could not import cv2 in python3.5"></a>Could not import cv2 in python3.5</h1><h2 id="Error-infomation"><a href="#Error-infomation" class="headerlink" title="Error infomation"></a>Error infomation</h2><p><code>ImportError: /opt/ros/kinetoc/lib/python2.7/dist-packages/cv2.so: undefined symbol: PyCObject_Type</code></p>
+<h2 id="Problem-discription"><a href="#Problem-discription" class="headerlink" title="Problem discription"></a>Problem discription</h2><p>The package cv2 could not be imported into python3.5, but it can be imported into python 2.7</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>The error appers while the python trys to import cv2.so from a wrong python path.<br>1- Check the current path for python<br>In a python console:<br><code>&gt;&gt;&gt;import sys</code><br><code>&gt;&gt;&gt;sys.path</code><br>2- Change the path<br>Change in the current terminal<br><code>export PYTHONPATH=/home/.../lib/python3.5/site-packages</code></p>
+
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/09/01/tips/" data-id="ck00ut125000228vmg2jwklpj"
+         class="article-share-link">Share</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-OpenCV/">python OpenCV</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
     
+  <nav class="article-nav">
+    
+    
+      <a href="/2019/09/01/test-my-site/" class="article-nav-link">
+        <strong class="article-nav-caption">Olde posts</strong>
+        <div class="article-nav-title">test_my_site</div>
+      </a>
+    
+  </nav>
+
+
   
 
   
+    
+  
+
+</article>
+
+
+
 </section>
   <footer class="footer">
   <div class="outer">
@@ -140,8 +129,8 @@
 
 </main>
 
-  <aside class="sidebar">
-    
+<aside class="sidebar sidebar-specter">
+  
     <button class="navbar-toggle"></button>
 <nav class="navbar">
   
@@ -206,6 +195,21 @@
   <script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
+
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5, h6',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
 
 <script src="/js/ocean.js"></script>

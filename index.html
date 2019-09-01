@@ -59,6 +59,70 @@
       
         
 
+<article id="post-tips" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2019/09/01/tips/">tips</a>
+    </h2>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/09/01/tips/" class="article-date">
+  <time datetime="2019-09-01T10:48:59.000Z" itemprop="datePublished">2019-09-01</time>
+</a>
+        
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <h1 id="Could-not-import-cv2-in-python3-5"><a href="#Could-not-import-cv2-in-python3-5" class="headerlink" title="Could not import cv2 in python3.5"></a>Could not import cv2 in python3.5</h1><h2 id="Error-infomation"><a href="#Error-infomation" class="headerlink" title="Error infomation"></a>Error infomation</h2><p><code>ImportError: /opt/ros/kinetoc/lib/python2.7/dist-packages/cv2.so: undefined symbol: PyCObject_Type</code></p>
+<h2 id="Problem-discription"><a href="#Problem-discription" class="headerlink" title="Problem discription"></a>Problem discription</h2><p>The package cv2 could not be imported into python3.5, but it can be imported into python 2.7</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>The error appers while the python trys to import cv2.so from a wrong python path.<br>1- Check the current path for python<br>In a python console:<br><code>&gt;&gt;&gt;import sys</code><br><code>&gt;&gt;&gt;sys.path</code><br>2- Change the path<br>Change in the current terminal<br><code>export PYTHONPATH=/home/.../lib/python3.5/site-packages</code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/09/01/tips/" data-id="ck00ut125000228vmg2jwklpj"
+         class="article-share-link">Share</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-OpenCV/">python OpenCV</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+      
+        
+
 <article id="post-test-my-site" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
   
   <div class="article-inner">
@@ -100,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/01/test-my-site/" data-id="ck00tybba000098vmd9ma3rfu"
+      <a data-url="http://yoursite.com/2019/09/01/test-my-site/" data-id="ck00ut127000328vm9h6ya05y"
          class="article-share-link">Share</a>
       
     </footer>
@@ -172,7 +236,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/01/hello-world/" data-id="ck00tybbv000198vm929xj37n"
+      <a data-url="http://yoursite.com/2019/09/01/hello-world/" data-id="ck00ut121000128vmy7lc6l1p"
          class="article-share-link">Share</a>
       
     </footer>
@@ -201,8 +265,6 @@
       <ul class="list-inline">
   
     <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
-  
-    <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
   
 </ul>
     </div>
